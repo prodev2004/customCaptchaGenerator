@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+    <!-- don't forget to link CSS and JS -->
+    <!-- I'm using FontAwesome to generate new captcha button icon -->
+    <title>Custom Captcha</title>
+</head>
+<body>
+    <div class="container">
+        <div class="captcha">
+            <p class="captcha_text"></p>
+            <button class="redo_btn">
+                <i class="fas fa-redo"></i>
+            </button>
+        </div>
+        <div class="check_captcha">
+            <!-- since the maxlength is 6 we cant type more than 6 characters -->
+            <input type="text" maxlength="6" placeholder="Type Captcha..." required>
+            <button class="check_btn">Check</button>
+        </div>
+        <p class="alert"></p>
+        <!-- this will be empty I just added the text so we can see what we're styling -->
+    </div>
+</body>
+</html>
